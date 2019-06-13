@@ -1,6 +1,9 @@
-::after:not(i::after),
-::before:not(i::before){
+::after,
+::before{
     position: absolute;
+}
+i:after,i:before{
+    position: unset;   
 }
 :root{
     font-family: 'Roboto', sans-serif;
@@ -149,8 +152,8 @@ h1,h2{
         text-transform: uppercase;
     }
     [class*='subtitle']{
-        margin-top:3.6rem;
-        margin-bottom:4.8rem;
+        margin-top:1.2em;
+        margin-bottom:1.8em;
         color: var(--dark-color);       
     }
     .subtitle{
@@ -292,9 +295,6 @@ h1,h2{
     section#services{
         padding-top:calc( 120px + 180px);
         padding-bottom: 180px;
-        display:flex;
-        flex-direction: column;
-        align-items: center;
         height: 1200px;
         background-image: url(../img/services/services-bg.png);
     }
@@ -403,14 +403,31 @@ h1,h2{
         background-color: var(--light-color);
     }
     .card__post .card__avatar{
-        height: 200px;
+        height: 50%;
         width: 100%;
     }
+    .card__post .card__content{
+        padding:0px 30px;
+    }    
     .card__post .title__small{
         font-size:14px;
+        font-weight: bold;
         color:var(--dark-color);
-        padding:30px 30px 10px 30px;
     }
+    .card__post .subtitle__small{
+        font-size: 11px;
+        /* margin: */
+    }
+    .card__post .see-more{
+        bottom:30px;
+        left: 30px;
+        transform: unset;
+    }
+
+
+
+
+
 
     .see-more{
         color:var(--hightlight-color);
