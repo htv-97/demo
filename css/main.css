@@ -20,9 +20,18 @@ i:after,i:before{
 section,article,aside,nav,header,footer,main{
     position: relative;
 }
-*{box-sizing: border-box;}
-body,h1,h2,h3,h4,h5{
+*{    
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+body,h1,h2,h3,h4,h5,p{
     margin:0;
+}
+[class*='card__post']{
+    box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
 }
 img{
     object-fit: cover;
@@ -54,6 +63,7 @@ li{
 .container{
     width: 1040px;
 }
+
 h1,h2{
     color: var(--primary-color);
 }
@@ -98,8 +108,6 @@ h1,h2{
         height: 640px;
     }
     .bg__fluid{
-        height:100%;
-        width: 100%;
         background-position:center center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -139,6 +147,7 @@ h1,h2{
     }
     [class*='title']{
         line-height: 1.5;
+        font-weight: bolder;
     }
     .title{
         font-size: 3.2rem;
@@ -146,7 +155,6 @@ h1,h2{
     }    
     .title__huge{
         font-size: 5.6rem;
-        font-weight: bolder;
         text-transform: uppercase;
     }
     [class*='subtitle']{
@@ -264,8 +272,8 @@ h1,h2{
     .text-end{
         text-align: end;
     }
-    .align__items--center{
-        align-items: center;
+    .text-start{
+        text-align: start;
     }
     .boxes__icon{
         background-color: var(--light-color);
@@ -403,7 +411,7 @@ h1,h2{
             background-color: var(--light-color);
         }
         .card__post .card__avatar{
-            height: 50%;
+            height: 60%;
             width: 100%;
         }
         .card__post .card__content{
@@ -413,6 +421,7 @@ h1,h2{
             font-size:14px;
             font-weight: bold;
             color:var(--dark-color);
+            
         }
         .card__post .subtitle__small{
             font-size: 11px;
@@ -423,9 +432,97 @@ h1,h2{
             left: 30px;
             transform: unset;
         }
-        .card__post .dot{
-            background-color: #000;
+
+    #news .dot{
+        background-color: #000;
+    }
+
+/* customers */
+    #customers{
+        padding-top:110px;
+        padding-bottom: 110px;
+    }
+    #customer .subtitle__small{
+        font-size: 16rem;
+        line-height: 22px;
+    }
+    #customer .row img{
+        width:520px;
+        height: 150px;
+    }
+
+/* consult */
+    #consult{
+        background-image: url(../img/consult.png);
+        padding-top:75px;
+        padding-bottom:75px;
+    }
+    #consult .title{
+        color:var(--light-color);
+    }
+
+
+
+/* footer */
+    /* footer-info */
+        #footer-info{
+            background-color: var(--bg-color);
+            padding:100px 40px;
         }
+        #footer-info .logo img{
+            height: 80px;
+        }
+        #footer-info .title{
+            font-size: 24px;
+            line-height: 28px;
+            margin-bottom:20px;
+        }
+        #footer-info .subtitle{
+            font-size: 14px;
+            margin:0 0 11px;
+            color: var(--dark-color);
+        }
+        #footer-info .subtitle i{
+            margin-right:7px;
+        }
+        .features__list{
+            display: inline-block;
+            text-align: start;
+        }
+        .features__list h3{
+            font-size: 18px;
+            line-height: 1.4;
+            margin-bottom:20px;
+        }
+        .features__list a{
+            display: block;
+            color: rgba(0, 0, 0, 0.87);
+            font-size: 14px;
+            line-height: 20px;
+            margin-bottom:16px;
+        }
+
+    /* footer-brand */
+        #footer-brand{
+            background-color: var(--primary-color);
+            padding: 1em 0;
+        }
+        #footer-brand p{
+            color:var(--light-color);
+            font-size: 1.2rem;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
