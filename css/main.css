@@ -94,10 +94,8 @@ h1,h2{
     }
 
 /* slider */
-    .slides{
+    #slides{
         height: 640px;
-        position: relative;
-        overflow: hidden;
     }
     .bg__fluid{
         height:100%;
@@ -221,10 +219,11 @@ h1,h2{
         height:8px;
         vertical-align: middle;
         border-radius: 50%;
-        background-color: rgba(225, 225, 225, .5);
+        background-color: rgba(225, 225, 225);
+        opacity: .5;
     }
     .dot.active{
-        background-color: #fff;
+        opacity: 1;
     }
 /* section introduce */
     .title > strong{
@@ -397,32 +396,36 @@ h1,h2{
     .slide:not(:last-child){
         padding-right: 15px;
     }
-    .card__post{
-        height: 400px;
-        padding-bottom: 30px;
-        background-color: var(--light-color);
-    }
-    .card__post .card__avatar{
-        height: 50%;
-        width: 100%;
-    }
-    .card__post .card__content{
-        padding:0px 30px;
-    }    
-    .card__post .title__small{
-        font-size:14px;
-        font-weight: bold;
-        color:var(--dark-color);
-    }
-    .card__post .subtitle__small{
-        font-size: 11px;
-        /* margin: */
-    }
-    .card__post .see-more{
-        bottom:30px;
-        left: 30px;
-        transform: unset;
-    }
+    /* .card__post */
+        .card__post{
+            height: 400px;
+            padding-bottom: 30px;
+            background-color: var(--light-color);
+        }
+        .card__post .card__avatar{
+            height: 50%;
+            width: 100%;
+        }
+        .card__post .card__content{
+            padding:0px 30px;
+        }    
+        .card__post .title__small{
+            font-size:14px;
+            font-weight: bold;
+            color:var(--dark-color);
+        }
+        .card__post .subtitle__small{
+            font-size: 11px;
+            /* margin: */
+        }
+        .card__post .see-more{
+            bottom:30px;
+            left: 30px;
+            transform: unset;
+        }
+        .card__post .dot{
+            background-color: #000;
+        }
 
 
 
