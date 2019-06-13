@@ -104,7 +104,7 @@ h1,h2{
     }
 
 /* slider */
-    #slides{
+    #slides,#slides .slide{
         height: 640px;
     }
     .bg__fluid{
@@ -189,6 +189,7 @@ h1,h2{
         display: inline-block;
     }
     .arr{
+        z-index: 10;
         position: absolute;
         width:40px;
         height:40px;
