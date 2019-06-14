@@ -9,16 +9,17 @@ $(document).ready(function () {
             items: 1,
             nav: true,
             loop: true,
-            smartSpeed:1000,
+            smartSpeed:400,
             margin: 0,
             autoplay: true,
             autoplayTimeout: 1000,
             autoplayHoverPause: true
         });
         owl3.owlCarousel({
+            center:true,
             items: 3,
             stagePadding:0,
-            smartSpeed:1000,
+            smartSpeed:400,
             loop: true,
             margin: 20,
             autoplay: true,
@@ -36,7 +37,7 @@ $(document).ready(function () {
     
         owl5.owlCarousel({
             center:true,
-            smartSpeed:1000,
+            smartSpeed:400,
             items: 3,
             stagePadding: 150,
             nav:true,
@@ -48,59 +49,6 @@ $(document).ready(function () {
         });
 
 
-
-        // owl5.owlCarousel({
-        //     loop: true,
-        //     nav: true,
-        //     items:5,
-        //     // stagePadding:200,
-        //     center:true,
-        //     lazyLoad: true,
-        //     margin: 20,
-        //     video: true
-        //     // responsive: {
-        //     //   0: {
-        //     //     items: 1
-        //     //   },
-        //     //   600: {
-        //     //     items: 2
-        //     //   }
-        //     // //   960: {
-        //     // //     items: 4,
-        //     // //   },
-        //     // //   1200: {
-        //     // //     items: 5
-        //     // //   }
-        //     // }
-
-
-        // owl5.owlCarousel({
-        //     loop: true,
-        //     margin: 10,
-        //     responsiveClass: true,
-        //     responsive: {
-        //       0: {
-        //         items: 1,
-        //         nav: true
-        //       },
-        //       600: {
-        //         items: 3,
-        //         nav: false
-        //       },
-        //       1000: {
-        //         items: 5,
-        //         nav: true,
-        //         loop: false,
-        //         margin: 20
-        //       }
-        //     }
-        //   })
-
-
-
-        // clickCarousel(owl);
-        // clickCarousel(owl3);
-        // clickCarousel(owl5);
 
     // function clickCarousel(owl) {
     //     $('.arr--right').on('click',function () {
