@@ -93,10 +93,7 @@
       }    
     .title,
     [class^="title"]{
-      font-weight: bold;
       font-size: 1.8rem;
-      line-height: 1.5;
-      text-transform: uppercase;
       text-align: center;
     }
     .title__section{

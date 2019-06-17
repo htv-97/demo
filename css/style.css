@@ -93,7 +93,8 @@ header {
 .footer__info {
   padding-top: 120px;
   padding-bottom: 100px;
-  background: #e5e5e5 url(../img/foot-info.png) 110% 0px;
+  background: #e5e5e5 110% 0px;
+  background-image:  url(../img/foot-info.png) !important;
   background-blend-mode: soft-light;
 }
 
@@ -418,32 +419,32 @@ header {
 }
 /* size */
 [class*="-size-20"] {
-  font-size: 20px ;
+  font-size: 20px !important;
 }
 [class*="-size-18"] {
-  font-size: 18px ;
+  font-size: 18px !important;
 }
 [class*="-size-16"] {
-  font-size: 16px ;
+  font-size: 16px !important;
 }
 [class*="-size-17"] {
-  font-size: 17px ;
+  font-size: 17px !important;
 }
 [class*="-size-14"] {
-  font-size: 14px ;
+  font-size: 14px !important;
 }
 [class*="-size-12"] {
-  font-size: 12px ;
+  font-size: 12px !important;
 }
 
 [class*="-size-20"] {
-  font-size: 20px ;
+  font-size: 20px !important;
 }
 [class*="-size-28"] {
-  font-size: 28px ;
+  font-size: 28px !important;
 }
 [class*="-size-56"] {
-  font-size: 56px ;
+  font-size: 56px !important;
 }
 .hamburger {
   position: absolute;
@@ -511,7 +512,12 @@ header {
   text-align: center;
   bottom: -60px;
 }
-
+.dots-dark .owl-dot{
+  background-color: var(--dark-color);
+}
+#news .owl-nav{
+  display: none !important;
+}
 .controls-outline .owl-nav {
   position: relative;
   top: 70px;

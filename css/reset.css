@@ -18,7 +18,10 @@ img{
 li {
   list-style-type: none;
 }
-
+/* fix-owlcarousel disable */
+.disabled{
+  display: block !important;
+}
 
 
 /*!
