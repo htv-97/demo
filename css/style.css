@@ -93,8 +93,9 @@ header {
 .footer__info {
   padding-top: 120px;
   padding-bottom: 100px;
-  background: #e5e5e5 110% 0px;
-  background-image:  url(../img/foot-info.png) !important;
+  background-color: #e5e5e5 !important;
+  background-position: 110% 0 !important;
+  background-image: url(../img/foot-info.png) !important;
   background-blend-mode: soft-light;
 }
 
@@ -174,6 +175,10 @@ header {
   .box__icon{
     height: 50px;
   }
+  .clear__pseudo:after,
+  .clear__pseudo:before {
+    display: none;
+  }
   .boxes__icon .box__icon:not(:last-child)::after {
     content: "";
     position: absolute;
@@ -235,14 +240,13 @@ header {
 }
 .owl-item.active .card__3d{
   transform: scale(.8);
-  opacity: .9;
+  opacity: 1;
 }
 .owl-stage .active:last-child .card__3d,
 .owl-stage .active:first-child .card__3d{
   transform: scale(.9) !important;
 }
 .owl-item.active.center .card__3d{
-  opacity: 1;
   transform:unset;
 }
 

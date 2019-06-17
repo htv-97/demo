@@ -21,9 +21,9 @@ $(window).on('load',function() {
         smartSpeed: 400,
         loop: true,
         margin: 20,
-        // autoplay: true,
-        // autoplayTimeout: 1000,
-        // autoplayHoverPause: true,
+        autoplay: true,
+        autoplayTimeout: 1000,
+        autoplayHoverPause: true,
         responsiveClass:true,
         responsive: {
             0: {
@@ -51,21 +51,25 @@ $(window).on('load',function() {
                 items: 1,
                 stagePadding: 0,
             },
-            600: {
-                items : 3,
-                stagePadding: 120
-            },
-            900:{
+            700:{
                 items: 3,
+                stagePadding: 40
+            },
+            1200:{
+                stagePadding: 140
+            },
+            1400:{
                 stagePadding: 160
             },
             1500:{
-                items: 5,
-                stagePadding:120
-
+                stagePadding: 190
+            },
+            1600:{
+                items: 5, 
+                stagePadding: 120
             }
 
-        }
+        }   
     });
 
 
