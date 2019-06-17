@@ -68,9 +68,7 @@ button {
     overflow: hidden;
 }
 
-img {
-    object-fit: cover;
-}
+
 
 a {
     text-decoration: none;
@@ -274,12 +272,12 @@ header nav ul li:last-child a {
 
 .owl-prev {
     transform: translate(-50%, -50%);
-    left: 40px;
+    left: 45px;
 }
 
 .owl-next {
     transform: translate(50%, -50%);
-    right: 40px;
+    right: 45px;
 }
 
 .owl-dots {
@@ -418,7 +416,7 @@ section#services {
 
 .card__slide {
     transition: all .4s;
-    margin: 0 20px;
+    margin: auto;
     height: 470px;
     width: 300px;
     overflow: hidden;

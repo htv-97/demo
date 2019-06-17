@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(window).on('load',function() {
     var owl = $('.owl-carousel');
     var owl3 = $('.owl-carousel-3');
     var owl5 = $('.owl-carousel-5');
@@ -16,20 +16,23 @@ $(document).ready(function() {
         autoplayHoverPause: true,
     });
     owl3.owlCarousel({
-        center: true,
+        center:true,
         items: 3,
-        stagePadding: 0,
         smartSpeed: 400,
         loop: true,
         margin: 20,
-        autoplay: true,
-        autoplayTimeout: 1000,
-        autoplayHoverPause: true,
+        // autoplay: true,
+        // autoplayTimeout: 1000,
+        // autoplayHoverPause: true,
+        responsiveClass:true,
         responsive: {
             0: {
                 items: 1
             },
             600: {
+                items: 2
+            },
+            900:{
                 items: 3
             }
         }
@@ -38,23 +41,30 @@ $(document).ready(function() {
     owl5.owlCarousel({
         center: true,
         smartSpeed: 400,
-        stagePadding: 150,
         nav: true,
         loop: true,
-        margin: 20,
         autoplay: false,
-        autoplayTimeout: 1000,
+        autoplayTimeout: 2000,
         autoplayHoverPause: true,
         responsive: {
-            0: {
-                items: 1
+            300: {
+                items: 1,
+                stagePadding: 0,
             },
             600: {
-                items: 3
+                items : 3,
+                stagePadding: 120
             },
-            900: {
-                items: 5
+            900:{
+                items: 3,
+                stagePadding: 160
+            },
+            1500:{
+                items: 5,
+                stagePadding:120
+
             }
+
         }
     });
 
