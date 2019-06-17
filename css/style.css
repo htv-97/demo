@@ -241,10 +241,9 @@ header {
 .owl-stage .active:first-child .card__3d{
   transform: scale(.9) !important;
 }
-.owl-item.active.center .card{
+.owl-item.active.center .card__3d{
   opacity: 1;
   transform:unset;
-  margin: auto;
 }
 
 /* contact section */
@@ -256,7 +255,7 @@ header {
     align-items: center;
   }
   .card__contact{
-    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
     padding: 75px 30px 50px;
     background-color: var(--light-color);
     width: auto;

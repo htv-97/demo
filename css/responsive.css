@@ -120,6 +120,9 @@
     .bordered{
         border-right-width: 0;
     }
+    .owl-item.active.center .card{
+        margin:auto;
+    }
     .card__post .see-more{
         transform: translateX(-50%);
         left: 50%;

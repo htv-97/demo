@@ -21,9 +21,9 @@ $(window).on('load',function() {
         smartSpeed: 400,
         loop: true,
         margin: 20,
-        autoplay: true,
-        autoplayTimeout: 1000,
-        autoplayHoverPause: true,
+        // autoplay: true,
+        // autoplayTimeout: 1000,
+        // autoplayHoverPause: true,
         responsiveClass:true,
         responsive: {
             0: {
